@@ -1,0 +1,57 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Lock files (include composer.lock for applications, exclude for libraries)
+composer.lock
+
+# Build artifacts and caches
+/build/
+/.phpunit.cache/
+/.pest/
+/coverage/
+/phpunit.xml
+/infection.json.dist
+
+# IDE files
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+/storage/logs/
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# PHPStan
+/phpstan.neon.dist
+
+# Laravel specific (if using Laravel features)
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/testing/
+/storage/framework/views/
+/bootstrap/cache/
+
+# Package specific
+/docs/_build/
