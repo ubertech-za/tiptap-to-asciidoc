@@ -1,0 +1,70 @@
+{
+    "name": "ubertech-za/tiptap-to-asciidoc",
+    "version": "0.1.0",
+    "description": "TipTap to AsciiDoc converter for PHP, inspired by and utilizing Ueberdosis TipTap architectural patterns",
+    "type": "library",
+    "keywords": ["tiptap", "asciidoc", "converter", "rich-text", "editor", "documentation"],
+    "require": {
+        "php": "^8.2",
+        "ueberdosis/tiptap-php": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uber Technologies cc"
+        }
+    ],
+    "homepage": "https://github.com/ubertech-za/tiptap-to-asciidoc",
+    "support": {
+        "issues": "https://github.com/ubertech-za/tiptap-to-asciidoc/issues",
+        "source": "https://github.com/ubertech-za/tiptap-to-asciidoc"
+    },
+    "funding": [
+        {
+            "type": "other",
+            "url": "https://github.com/ubertech-za"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "UbertechZa\\TipTapToAsciiDoc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UbertechZa\\TipTapToAsciiDoc\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0",
+        "orchestra/testbench": "^9.0",
+        "phpstan/phpstan": "^1.11",
+        "laravel/pint": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "pest",
+        "format": "pint",
+        "analyse": "phpstan analyse"
+    },
+    "extra": {
+        "attribution": {
+            "inspired_by": "ueberdosis/tiptap",
+            "original_package": "https://github.com/ueberdosis/tiptap",
+            "php_package": "ueberdosis/tiptap-php",
+            "license": "MIT",
+            "note": "This package is inspired by and utilizes Ueberdosis TipTap architectural patterns, adapted for AsciiDoc output format"
+        },
+        "laravel": {
+            "providers": [
+                "UbertechZa\\TipTapToAsciiDoc\\TipTapToAsciiDocServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
